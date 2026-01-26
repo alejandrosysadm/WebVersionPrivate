@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resuelve IT | Sistemas y Redes</title>
+<meta name="description" content="Consultoría IT profesional: sistemas, redes, ciberseguridad, cloud, soporte 24/7 para empresas y particulares.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <strong class="logo">Resuelve IT</strong>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#metodologia">Metodología</a>
+      <a href="#planes">Planes</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto" class="btn">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop>
+    <source src="videos/video-portada.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Soluciones IT Profesionales</h1>
+    <p class="hero-subtitle" id="typing-text">Seguro. Confiable. Siempre disponible.</p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Solicitar presupuesto</a>
+      <a href="#servicios" class="btn-secondary">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section">
+  <div class="container">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <a href="sistemas.html" style="text-decoration: none; color: inherit;">
+        <div class="card"><i class="icon-systems">🖥️</i><h3>Administración de Sistemas</h3><p>Servidores Windows y Linux, virtualización, backups y alta disponibilidad.</p></div>
+      </a>
+      <a href="redes.html" style="text-decoration: none; color: inherit;">
+        <div class="card"><i class="icon-network">🌐</i><h3>Redes y Comunicaciones</h3><p>Redes seguras, VPNs, firewalls y WiFi empresarial.</p></div>
+      </a>
+      <a href="cloud.html" style="text-decoration: none; color: inherit;">
+        <div class="card"><i class="icon-cloud">☁️</i><h3>Cloud & Azure</h3><p>Migraciones a la nube, Azure, Microsoft 365 y optimización de costes.</p></div>
+      </a>
+      <a href="ciberseguridad.html" style="text-decoration: none; color: inherit;">
+        <div class="card"><i class="icon-security">🔒</i><h3>Ciberseguridad</h3><p>Protección de infraestructuras, hardening, auditorías y buenas prácticas.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- METODOLOGÍA -->
+<section id="metodologia" class="section alt">
+  <div class="container">
+    <h2>Metodología</h2>
+    <div class="timeline">
+      <div class="timeline-step"><span>1</span><p>Análisis y auditoría inicial</p></div>
+      <div class="timeline-step"><span>2</span><p>Propuesta técnica y económica</p></div>
+      <div class="timeline-step"><span>3</span><p>Implementación controlada</p></div>
+      <div class="timeline-step"><span>4</span><p>Monitorización y soporte continuo</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES -->
+<section id="planes" class="section">
+  <div class="container">
+    <h2>Planes de soporte</h2>
+    <div class="pricing">
+      <div class="price-card"><h3>Básico</h3><p class="price">59€/mes</p><ul><li>Soporte remoto</li><li>Mantenimiento preventivo</li><li>Horario laboral</li></ul></div>
+      <div class="price-card featured"><h3>Profesional</h3><p class="price">149€/mes</p><ul><li>Soporte prioritario</li><li>Monitorización</li><li>Intervención presencial</li></ul></div>
+      <div class="price-card"><h3>Empresa</h3><p>A medida</p><ul><li>Soporte 24/7</li><li>SLA garantizado</li><li>Gestión integral IT</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ MODERNA -->
+<section id="faq" class="section alt">
+  <div class="container">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-grid">
+      <div class="faq-card">
+        <div class="faq-question">¿Trabajas con empresas pequeñas? <span>+</span></div>
+        <div class="faq-answer">Sí, desde autónomos hasta pymes y medianas empresas.</div>
+      </div>
+      <div class="faq-card">
+        <div class="faq-question">¿Ofreces soporte remoto? <span>+</span></div>
+        <div class="faq-answer">Sí, y también presencial si es necesario.</div>
+      </div>
+      <div class="faq-card">
+        <div class="faq-question">¿Puedes trabajar con infraestructuras existentes? <span>+</span></div>
+        <div class="faq-answer">Claro, auditamos y mejoramos progresivamente.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section">
+  <div class="container">
+    <h2>Contacto</h2>
+    <form id="contactForm" class="form" action="https://formspree.io/f/mkorbdqg" method="POST">
+      <div class="form-section">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="empresa" placeholder="Empresa (opcional)">
+        <select name="servicio">
+          <option>Sistemas</option>
+          <option>Redes</option>
+          <option>Ciberseguridad</option>
+          <option>Cloud</option>
+        </select>
+      </div>
+      <div class="form-section">
+        <textarea name="mensaje" placeholder="Describe tu necesidad" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Enviar solicitud</button>
+      <div class="form-message"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Resuelve IT · Todos los derechos reservados</p>
+    <p><a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></p>
+  </div>
+</footer>
+
+<a href="https://wa.me/603612356" class="whatsapp-float" target="_blank">💬</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
