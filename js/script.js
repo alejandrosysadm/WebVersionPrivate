@@ -102,3 +102,22 @@ document.querySelectorAll('#nav-menu a').forEach(link => {
     navMenu.classList.remove('active');
   });
 });
+
+// COOKIE POPUP
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cookiesPopup = document.getElementById('cookiesPopup');
+  const acceptCookies = document.getElementById('acceptCookies');
+
+  if (cookiesPopup && acceptCookies) {
+    // Mostrar popup solo si no se ha aceptado
+    if (!localStorage.getItem('cookiesAccepted')) {
+      cookiesPopup.style.display = 'flex';
+    }
+
+    acceptCookies.addEventListener('click', () => {
+      localStorage.setItem('cookiesAccepted', 'true');
+      cookiesPopup.style.display = 'none';
+    });
+  }
+});

@@ -33,10 +33,18 @@
 
 <!-- HERO -->
 <section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline>
-    <source src="videos/video-ciberseguridad.mp4" type="video/mp4">
-    Tu navegador no soporta video.
-  </video>
+  <video class="hero-video"
+       autoplay
+       muted
+       loop
+       playsinline
+       preload="auto"
+       poster="images/imagen-ciberseguridad.png"
+       oncanplay="this.classList.add('loaded')">
+  <source src="videos/video-ciberseguridad.mp4" type="video/mp4">
+  Tu navegador no soporta video.
+</video>
+
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Ciberseguridad Profesional</h1>
@@ -132,7 +140,7 @@
 <footer class="footer">
   <div class="container">
     <p>© 2026 Resuelve IT · Todos los derechos reservados</p>
-    <p><a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></p>
+	<p><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a></p>
   </div>
 </footer>
 

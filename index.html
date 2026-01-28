@@ -33,14 +33,22 @@
 
 <!-- HERO -->
 <section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline>
-    <source src="videos/video-portada.mp4" type="video/mp4">
-    Tu navegador no soporta video.
-  </video>
+  <video class="hero-video"
+       autoplay
+       muted
+       loop
+       playsinline
+       preload="auto"
+       poster="images/imagen-portada.png"
+       oncanplay="this.classList.add('loaded')">
+  <source src="videos/video-portada.mp4" type="video/mp4">
+  Tu navegador no soporta video.
+</video>
+
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Soluciones IT Profesionales</h1>
-    <p class="hero-subtitle" id="typing-text">Seguro. Confiable. Siempre disponible.</p>
+    <p class="hero-subtitle" id="typing-text">Seguro Confiable Siempre disponible</p>
     <div class="hero-actions">
       <a href="#contacto" class="btn-primary">Solicitar presupuesto</a>
       <a href="#servicios" class="btn-secondary">Ver servicios</a>
@@ -144,12 +152,19 @@
 <footer class="footer">
   <div class="container">
     <p>© 2026 Resuelve IT · Todos los derechos reservados</p>
-    <p><a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></p>
+    <p><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a></p>
   </div>
 </footer>
 
 <a href="https://wa.me/603612356" class="whatsapp-float" target="_blank">💬</a>
 
 <script src="js/script.js"></script>
+
+<div class="cookies-popup" id="cookiesPopup">
+  <p>Usamos cookies para mejorar tu experiencia en nuestro sitio.  
+  Al continuar navegando, aceptas nuestra <a href="privacidad.html">política de privacidad</a> y <a href="cookies.html">política de cookies</a>.</p>
+  <button id="acceptCookies">Aceptar</button>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Cookies | Resuelve IT</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Contenedor principal */
+  .cookies-policy {
+    max-width: 900px;
+    margin: 5rem auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,.1);
+    line-height: 1.6;
+  }
+
+  .cookies-policy h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+
+  .cookies-policy h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+  }
+
+  .cookies-policy p {
+    margin-bottom: 1rem;
+    color: var(--dark);
+  }
+
+  .cookies-policy ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .cookies-policy ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .cookies-policy a {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  .cookies-policy button {
+    margin-top: 2rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: .75rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .cookies-policy button:hover {
+    background: var(--primary-dark);
+  }
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <strong class="logo">Resuelve IT</strong>
+      <nav id="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="redes.html">Redes</a>
+        <a href="cloud.html">Cloud</a>
+        <a href="ciberseguridad.html">Ciberseguridad</a>
+        <a href="#contacto" class="btn">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cookies-policy">
+    <h1>Política de Cookies</h1>
+    <p>En Resuelve IT utilizamos cookies para mejorar tu experiencia de navegación y ofrecerte un contenido más personalizado.</p>
+
+    <h2>¿Qué son las cookies?</h2>
+    <p>Las cookies son pequeños archivos de texto que se almacenan en tu navegador cuando visitas un sitio web. Permiten recordar tus preferencias y optimizar la experiencia de usuario.</p>
+
+    <h2>Tipos de cookies que utilizamos</h2>
+    <ul>
+      <li><strong>Cookies técnicas:</strong> necesarias para el funcionamiento del sitio web.</li>
+      <li><strong>Cookies de análisis:</strong> nos ayudan a mejorar el sitio web mediante estadísticas de uso (por ejemplo Google Analytics).</li>
+      <li><strong>Cookies de marketing:</strong> para mostrar anuncios relevantes según tus intereses.</li>
+    </ul>
+
+    <h2>Cómo desactivar las cookies</h2>
+    <p>Puedes configurar tu navegador para rechazar todas las cookies o recibir una alerta cuando se envíen. Ten en cuenta que algunas partes del sitio podrían no funcionar correctamente.</p>
+
+    <h2>Más información</h2>
+    <p>Para más detalles sobre nuestra política de privacidad y uso de cookies, consulta nuestra <a href="privacidad.html">Política de Privacidad</a>.</p>
+
+    <button id="acceptCookies">Aceptar cookies</button>
+  </main>
+
+  <script>
+    const acceptCookies = document.getElementById('acceptCookies');
+    acceptCookies.addEventListener('click', () => {
+      localStorage.setItem('cookiesAccepted', 'true');
+      alert('Gracias por aceptar nuestras cookies.');
+      window.location.href = 'index.html'; // Redirige a la página principal
+    });
+  </script>
+</body>
+</html>
